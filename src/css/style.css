@@ -9,6 +9,8 @@ html{
 }
 body{
   margin: 0;
+  height: 100vh;
+  background-color: #282D35;
 }
 .NavLogo{
   width: 5%;
@@ -37,22 +39,32 @@ body{
 
 .content{
   padding: 20px;
-  background-color: rgba(15, 15, 15, 0.9);
-
 }
 
 .content > h1{
+  margin: 0;
   color: white;
 }
 
-.content > ul > li{
-  list-style-type: disc;
+.content-unordered-list{
+  display: inline-block;
+  margin-right: 15px;
+}
+.content-unordered-list > li{
   padding: 10px;
   font-weight: 50;
-  color: #61DAFB;
+  color: white;
 }
 
-.content > ul > li > span{
-  list-style-type: disc;
-  color: white;
+.content-unordered-list > li::marker{
+  color: #61DAFB;
+  font-size: 1.4em;
+}
+
+.content-img{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  margin-top: 20px
 }
